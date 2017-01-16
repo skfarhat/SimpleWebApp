@@ -5,4 +5,7 @@ node {
    stage('Build') {
       sh "./gradlew clean test"
    }
+   stage('Hello') {
+      echo "Hello"
+   }
 }
