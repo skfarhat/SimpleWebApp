@@ -13,6 +13,9 @@ public class QueryProcessor {
         else if (query.toLowerCase().contains("ivan")) {
             return "APE teacher";
         }
+        else if (query.toLowerCase().contains("sami")) {
+            return "APE student";
+        }
         return "";
     }
 }
