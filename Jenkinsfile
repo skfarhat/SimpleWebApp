@@ -3,11 +3,10 @@ node {
       git 'https://github.com/skfarhat/SimpleWebApp.git'
    }
    stage('Build') {
-    def os = System.properties['os.name'].toLowerCase()
-    if (os.contains("windows")) {
-        bat "./gradlew clean test"
-       } else {
+    if (isUnix()) {
         sh "./gradlew clean test"
+       } else {
+        bat "./gradlew clean test"
        }
    }
    stage('Hello') {
