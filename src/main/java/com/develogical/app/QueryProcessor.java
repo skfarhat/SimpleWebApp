@@ -16,6 +16,9 @@ public class QueryProcessor {
         else if (query.toLowerCase().contains("sami")) {
             return "APE student";
         }
+        else if (query.toLowerCase().contains("cameron")) {
+            return "he resigned after losing votes in the referendum.......";
+        }
         return "";
     }
 }
